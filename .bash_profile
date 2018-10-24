@@ -10,9 +10,3 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
-
-export PATH="/Applications/MAMP/Library/bin:$PATH"
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-alias brackets='open -a /Applications/Brackets.app/'
-alias dia='DISPLAY=:0 /Applications/Dia.app/Contents/Resources/bin/dia'
-
